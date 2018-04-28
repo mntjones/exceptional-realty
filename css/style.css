@@ -1,11 +1,23 @@
 /* This is a 
 comment */
 
-@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900)
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+
+
+/* GLOBAL */
+
+h3 {
+	margin: 0 0 0 10px;
+}
 
 p {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 1.5em;
+}
+
+figure {
+	margin: 0 0 0 10px;
 }
 
 figcaption {
@@ -14,30 +26,54 @@ figcaption {
 	line-height: 1.5em;
 	font-family: Georgia, "New Times Roman", serif; */
 
-	font: normal 0.75em/1.5em 'Elsie Swash Caps', "New Times Roman", serif;
+	font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
 	color: #777;
 	text-align: right;
 }
 
 .milk-text {
 	font: bold, 2.6em, 'Elsie Swash Caps', cursive;
-	color: orange;
+	color: white;
+	text-align: right;
 	text-shadow: 0 2px 3px;
 }
 
+.shadow {
+	box-shadow: 0 3px 10px #333;
+}
+
+.border-right {
+	border-right: 1px dotted #ccc;
+	padding-right: 30px;
+}
 
 #logo h1 {
-	font-family: "Arial";
+	font-family: "Clicker Script", "Arial";
 }
 
 #logo h2 {
-	font-family: "New Times Roman";
+	font-family: "Elsie Swash Caps", cursive;
 }
 
 /* MEDIA */
 
 img, video, audio {
 	max-width: 100%;
+}
+
+/* FIXES */
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+.clear {
+	clear: both;
 }
 
 /* LAYOUT */
@@ -68,14 +104,6 @@ img, video, audio {
 	background: #FFFFE0;
 }
 
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	height: 0;
-	line-height: 0;
-}
 
 [class*="col-"] {
 	margin-left: 2%;
@@ -116,3 +144,11 @@ section {
 	height:40px;
 	background: pink;
 }
+
+/* BACKGROUNDS */
+
+.white-wood {
+	background: url(../images/white-wood.jpg) no-repeat center top;
+	background-size: cover;
+}
+
